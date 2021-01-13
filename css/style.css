@@ -1,0 +1,87 @@
+#topBanner{
+    background-color: white;
+    padding: 20px;
+     font-size: 50px; font-style: normal; font-variant: normal; font-weight: 100; line-height: 50px; 
+}
+
+body{
+    background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    width: 100%;
+    background-attachment: fixed; 
+  background-size: cover;
+
+}
+#link {
+color: white;
+}
+#navbarDropdown{
+    color:white;
+}
+#navvy{
+    font-size: 20px; font-style: normal; font-variant: normal; font-weight: 200; line-height: 20px; 
+
+}
+
+#intro{
+    background-color: rgba(112, 112, 112, 0.329);
+    height: 400px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    font-size: 27px; font-style: normal; font-variant: normal; font-weight: 500; line-height: 27px; 
+    color: white;
+    height: auto;
+}
+#introClub{
+    background-color: rgba(112, 112, 112, 0.329);
+    height: 280px;
+    padding-top: 80px;
+    font-size: 27px; font-style: normal; font-variant: normal; font-weight: 500; line-height: 27px; 
+    color: white;
+}
+#introClub>p{
+     font-size: 25px; font-style: normal; font-variant: normal; font-weight: 100; line-height: 30px; 
+
+}
+
+#introClub>h1{
+
+    font-size: 35px; font-style: normal; font-variant: normal; font-weight: 100; line-height: 35px; 
+
+}
+#opaque{
+    background-color: white;
+}
+.card{
+     font-size: 18px; font-style: normal; font-variant: normal; font-weight: 500; line-height: 27px; 
+    color: rgb(110, 110, 110);
+    text-align: center;
+}
+
+.card:hover{
+    text-decoration: none;
+    border-color: rgb(87, 87, 87);
+}
+
+.cards:hover{
+    text-decoration: none;
+    border-color: rgb(87, 87, 87);
+}
+
+#footer1{
+   font-size: 13px; font-style: normal; font-variant: normal; font-weight: 500; line-height: 27px; 
+    color: rgb(172, 172, 172);
+    text-align: center;
+    background-color: rgb(80, 80, 80);
+}
+
+#footer1:hover{
+    text-decoration: none;
+    background-color: rgb(112, 110, 110);
+}
+#footer2{
+    font-size: 13px; font-style: normal; font-variant: normal; font-weight: 500; line-height: 27px; 
+    color: rgb(172, 172, 172);
+    text-align: center;
+    background-color: rgb(80, 80, 80);
+}
