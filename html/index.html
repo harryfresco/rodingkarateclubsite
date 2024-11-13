@@ -38,7 +38,17 @@
 
      
       <div id="intro" class="text-center">
-        <p>Established in 1976 with 45 years of experience.</p>
+        <p>Established in 1976 with <span id="years-since"></span> years of experience.</p>
+        <script>
+               // Get the current year
+              const currentYear = new Date().getFullYear();
+              // Define the start year
+              const startYear = 1976;
+              // Calculate the number of years from 1976 to the current year
+              const yearsSince = currentYear - startYear;
+            document.getElementById('years-since').textContent = yearsSince;
+        </script>
+       
         <p>The Roding Karate club is a well-known local family business.</p>      
       </div>
 
