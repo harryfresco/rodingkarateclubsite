@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <title>Roding Karate Club</title>
-
+    <meta name="description" content="Karate Classes Near Me. Established in 1976 with 48 years of experience.
+    The Roding Karate club is a well-known local family business. We offer Karate classes in: Barkingside & Chingford.
+    We teach all ages from 4 onwards. We also offer online classes at a cost of £10 for a 30 minute, private karate lesson.">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -25,7 +27,7 @@
 </head>
 <body>
   
-  
+  <div id="background">
   <div id="nav-placeholder">
 
   </div>
@@ -38,6 +40,7 @@
 
      
       <div id="intro" class="text-center">
+        <span class="centreClass">
         <p>Established in 1976 with <span id="years-since"></span> years of experience.</p>
         <script>
                // Get the current year
@@ -49,17 +52,25 @@
             document.getElementById('years-since').textContent = yearsSince;
         </script>
        
-        <p>The Roding Karate club is a well-known local family business.</p>      
+        <p>The <a href="about.html" style="text-decoration: underline; color: white;">Roding Karate Club</a> is a well-known local family business.</p></span>     
+     
       </div>
-
+      <a href="#mainSubject">
+        <svg class="arrows" >
+        <path class="a1" d="M0 0 L30 32 L60 0"></path>
+        <path class="a2" d="M0 20 L30 52 L60 20"></path>
+        <path class="a3" d="M0 40 L30 72 L60 40"></path>
+      </svg>
+      </a>
+      
       <div id="opaque">
-        <a href="" data-toggle="modal" data-target="#exampleModal">
+<!--         <a href="" data-toggle="modal" data-target="#exampleModal">
           <div class="alert alert-success" role="alert">
             Coronavirus Update: All clubs are now open for indoor children's training. Click here for more details
           </div>
-</a>
+</a> -->
           
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!--           <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
@@ -83,30 +94,30 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
         
-      <div class="container">
+      <div class="container frontPageContainer" id="mainSubject">
         <div class="row justify-content-center">
-          <div class="col-3-sm">
+          <div class="col-3-sm frontCards">
        
             <div class="card" style="width: 18rem;">
               <div class="card-body">
-                <h5 class="card-title">Our Training & Services</h5>
-                <p class="card-text">We teach all ages from 4 onwards. Contact us to find out about getting a free lesson and what family discounts we can offer. We also teach in schools as a extra curricular activity. If this is something that is of interest to you please contact us to discuss your requirements.</p>
+                <h5 class="card-title" style="font-style: italic;">Our Training & Services</h5>
+                <p class="card-text"><li>All ages from 4 onwards.</li><br>Contact us to find out about getting a free lesson and what family discounts we can offer. We also teach in schools as a extra curricular activity. </p>
                
               </div>
             </div>
     
           </div>
 
-          <div class="col-3-sm offset-sm-1">
+          <div class="col-3-sm frontCards">
             
                 <div class="card" style="width: 18rem;">
                   <div class="card-body">
-                    <h5 class="card-title">How To Join</h5>
-                    <p class="card-text">Joining is really easy, you can either just 
-                      <b>turn up and start straight away.</b> 
-                      <br>Or you could just contact us to let us know you are coming. We charge on a 
+                    <h5 class="card-title" style="font-style: italic;">How To Join</h5>
+                    <p class="card-text"><li> 
+                      <b>Turn up and start straight away.</b> </li>
+                     <br>We charge on a 
                       <b>pay as you train basis,</b> so there's no real financial commitment. 
                       We think that this is the only fair way to pay for Karate lessons. </p>
                    
@@ -114,19 +125,19 @@
                 </div>
              
               </div>
-          <div class="col-3-sm offset-sm-1">
+          <div class="col-3-sm  frontCards">
             <a href="allClubs.html" class='cards'> 
-            <div class="card" style="width: 18rem; padding-bottom: 26px;">
+            <div class="card" style="width: 18rem;">
               <div class="card-body">
-                <h5 class="card-title">Areas & Training Times</h5>
-                <p class="card-text">We offer a range of Karate training sessions in: Barkingside & Chingford 
-                  We also offer online lessons at a cost of £10 for a 30 minute private lesson. Please contact us on 07951 309914 or email: robertfresco9@gmail.com if this of interest to you.</p>
+                <h5 class="card-title "style="font-style: italic;">Karate Classes Near Me</h5>
+                <p class="card-text"><li><span style="text-decoration: underline;">Barkingside & Chingford</span> </li><br> 
+                  We also offer online classes for £15 for a 30 minute, private karate lesson. Please contact us on 07951 309914 or email: robertfresco9@gmail.com.</p>
               </div>
             </div>
             </a>
           </div>
         </div>
-        <br><br>
+      
       <br>
         <div class="row justify-content-center"> 
         <div class="col-3-sm">
@@ -172,7 +183,7 @@
         $("#footer-placeholder").load("footer.html");
      
     </script>
-
+</div>
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </body>
